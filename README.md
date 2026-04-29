@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="file.css">
 
 <style>
-/* Center Navbar */
+    
 .navbar {
     background: #111;
     display: flex;
