@@ -2,7 +2,6 @@
 <html>
 <head>
     <title>Currency Converter Dashboard</title>
-    <link rel="stylesheet" href="file.css">
 </head>
 
 <body>
@@ -15,80 +14,76 @@
 
 
 <nav>
-    <a href="#dashboard">Dashboard</a> |
-    <a href="#convert">Converter</a> |
-    <a href="#rates">Rates</a> |
-    <a href="#about">About</a> |
+    <a href="#dashboard">Dashboard</a>
+    <a href="#convert">Converter</a>
+    <a href="#rates">Rates</a>
+    <a href="#about">About</a>
     <a href="#help">Help</a>
 </nav>
 
-<hr>
+<div class="container">
 
 
-<section id="dashboard">
+<div id="dashboard" class="card">
     <h2>Dashboard</h2>
-    <p>Welcome! Use this tool to convert currencies like INR, USD, and EUR.</p>
-</section>
-
-<hr>
+    <p>Welcome! Convert INR, USD, EUR quickly with a clean UI.</p>
+</div>
 
 
-<section id="convert">
+<div id="convert" class="card">
     <h2>Rupees Currency Converter</h2>
 
-    <label>Amount:</label>
-    <input type="number" id="amount">
+    <div class="grid">
 
-    <br><br>
+        <div>
+            <label>Amount</label>
+            <input type="number" id="amount">
 
-    <label>From:</label>
-    <select id="from">
-        <option value="INR">INR (₹)</option>
-        <option value="USD">USD ($)</option>
-        <option value="EUR">EUR (€)</option>
-    </select>
+            <label>From</label>
+            <select id="from">
+                <option value="INR">INR (₹)</option>
+                <option value="USD">USD ($)</option>
+                <option value="EUR">EUR (€)</option>
+            </select>
 
-    <br><br>
+            <label>To</label>
+            <select id="to">
+                <option value="USD">USD ($)</option>
+                <option value="INR">INR (₹)</option>
+                <option value="EUR">EUR (€)</option>
+            </select>
 
-    <label>To:</label>
-    <select id="to">
-        <option value="INR">INR (₹)</option>
-        <option value="USD">USD ($)</option>
-        <option value="EUR">EUR (€)</option>
-    </select>
+            <button onclick="convert()">Convert</button>
+        </div>
 
-    <br><br>
+        <div>
+            <h3>Converted Result</h3>
+            <p id="result">₹0</p>
+        </div>
 
-    <button onclick="convert()">Convert</button>
-
-    <p id="result">Converted Amount: ₹0</p>
-</section>
-
-<hr>
+    </div>
+</div>
 
 
-<section id="rates">
+<div id="rates" class="card">
     <h2>Exchange Rates</h2>
     <p>1 USD ≈ ₹83</p>
     <p>1 EUR ≈ ₹90</p>
-</section>
-
-<hr>
+</div>
 
 
-<section id="about">
+<div id="about" class="card">
     <h2>About</h2>
-    <p>This dashboard helps you convert currencies quickly and easily.</p>
-</section>
+    <p>This dashboard helps you convert currencies quickly with a modern UI.</p>
+</div>
 
-<hr>
 
-<section id="help">
+<div id="help" class="card">
     <h2>Help</h2>
     <p>Email: support@converter.com</p>
-</section>
+</div>
 
-<hr>
+</div>
 
 
 <footer>
@@ -111,7 +106,7 @@ function convert() {
     let result = (amount / rates[from]) * rates[to];
 
     document.getElementById("result").innerHTML =
-        "Converted Amount: " + result.toFixed(2) + " " + to;
+        result.toFixed(2) + " " + to;
 }
 </script>
 
