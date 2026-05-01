@@ -1,96 +1,91 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Currency Converter Dashboard</title>
+    <title>Currency Converter Pro</title>
     <link rel="stylesheet" href="file.css">
 </head>
 
 <body>
 
-
 <header>
     <h1>Currency Converter Dashboard 💱</h1>
-    <p>Convert currencies easily (₹ Rupees supported)</p>
+    <p>Fast • Simple • Modern Currency Converter</p>
 </header>
-
 
 <nav>
     <a href="#dashboard">Dashboard</a>
     <a href="#convert">Converter</a>
     <a href="#rates">Rates</a>
-    <a href="#about">About</a>
+    <a href="#features">Features</a>
     <a href="#help">Help</a>
 </nav>
 
 <div class="container">
 
-
-<div id="dashboard" class="card">
+<!-- DASHBOARD -->
+<section id="dashboard" class="card">
     <h2>Dashboard</h2>
-    <p>Welcome! Convert INR, USD, EUR quickly with a clean UI.</p>
-</div>
+    <p>Convert INR, USD, EUR instantly with clean UI.</p>
 
-
-<div id="convert" class="card">
-    <h2>Rupees Currency Converter</h2>
-
-    <div class="grid">
-
-        <div>
-            <label>Amount</label>
-            <input type="number" id="amount">
-
-            <label>From</label>
-            <select id="from">
-                <option value="INR">INR (₹)</option>
-                <option value="USD">USD ($)</option>
-                <option value="EUR">EUR (€)</option>
-            </select>
-
-            <label>To</label>
-            <select id="to">
-                <option value="USD">USD ($)</option>
-                <option value="INR">INR (₹)</option>
-                <option value="EUR">EUR (€)</option>
-            </select>
-
-            <button onclick="convert()">Convert</button>
-        </div>
-
-        <div>
-            <h3>Converted Result</h3>
-            <p id="result">₹0</p>
-        </div>
-
+    <div class="stats">
+        <div class="box">💰 3+ Currencies</div>
+        <div class="box">⚡ Fast Conversion</div>
+        <div class="box">🔒 Secure</div>
     </div>
-</div>
+</section>
 
+<!-- CONVERTER (CENTER BIG) -->
+<section id="convert" class="card main-card">
+    <h2>💱 Currency Converter</h2>
 
-<div id="rates" class="card">
+    <input type="number" id="amount" placeholder="Enter Amount">
+
+    <select id="from">
+        <option value="INR">INR (₹)</option>
+        <option value="USD">USD ($)</option>
+        <option value="EUR">EUR (€)</option>
+    </select>
+
+    <select id="to">
+        <option value="USD">USD ($)</option>
+        <option value="INR">INR (₹)</option>
+        <option value="EUR">EUR (€)</option>
+    </select>
+
+    <button onclick="convert()">Convert</button>
+
+    <h3 id="result">₹0</h3>
+</section>
+
+<!-- RATES -->
+<section id="rates" class="card">
     <h2>Exchange Rates</h2>
     <p>1 USD ≈ ₹83</p>
     <p>1 EUR ≈ ₹90</p>
-</div>
+</section>
 
+<!-- FEATURES -->
+<section id="features" class="card">
+    <h2>Why Choose Us?</h2>
+    <ul>
+        <li>✔ Fast & Accurate Conversion</li>
+        <li>✔ Clean & Modern UI</li>
+        <li>✔ Mobile Friendly</li>
+        <li>✔ Easy to Use</li>
+    </ul>
+</section>
 
-<div id="about" class="card">
-    <h2>About</h2>
-    <p>This dashboard helps you convert currencies quickly with a modern UI.</p>
-</div>
-
-
-<div id="help" class="card">
+<!-- HELP -->
+<section id="help" class="card">
     <h2>Help</h2>
     <p>Email: support@converter.com</p>
-</div>
+</section>
 
 </div>
-
 
 <footer>
-    <p>© 2026 Currency Converter Dashboard | Made in India 🇮🇳</p>
+    <p>© 2026 Currency Converter | Made in India 🇮🇳</p>
 </footer>
-
 
 <script>
 function convert() {
