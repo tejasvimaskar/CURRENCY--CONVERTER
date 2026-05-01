@@ -5,87 +5,74 @@
     box-sizing: border-box;
 }
 
-/* BODY */
+
 body {
     font-family: 'Segoe UI', sans-serif;
-    background: #f5ebe0; /* nude background */
-    color: #3e3e3e;
+    background: #0a192f;
+    color: #ccd6f6;
 }
 
 
 header {
-    background: linear-gradient(135deg, #d5bda5, #e3cfc0);
+    background: #e6ccb2;
+    color: #3e3e3e;
     text-align: center;
     padding: 25px 15px;
-    color: #3e3e3e;
 }
-
-header h1 {
-    font-size: 28px;
-}
-
-header p {
-    margin-top: 5px;
-    font-size: 14px;
-}
-
 
 nav {
-    background: #cdb4a4;
+    background: #020c1b;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
+    gap: 25px;
     padding: 12px;
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 
 nav a {
+    color: #ccd6f6;
     text-decoration: none;
-    color: #3e3e3e;
-    font-weight: 600;
+    font-weight: 500;
     transition: 0.3s;
 }
 
 nav a:hover {
-    color: white;
+    color: #64ffda;
 }
 
 
 section {
-    padding: 20px;
-}
-
-
-#convert, #dashboard, #rates, #about, #help {
-    background: #fff1e6;
-    margin: 15px;
+    background: #112240;
+    margin: 20px;
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
 }
 
 
-#convert h2 {
-    margin-bottom: 15px;
+h2 {
+    margin-bottom: 10px;
 }
 
 
 input, select {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     margin: 8px 0;
     border-radius: 8px;
-    border: 1px solid #d6ccc2;
+    border: none;
+    background: #233554;
+    color: white;
 }
 
 
 button {
     width: 100%;
     padding: 12px;
-    background: #b08968;
-    color: white;
+    background: #64ffda;
+    color: #0a192f;
     border: none;
     border-radius: 8px;
     font-weight: bold;
@@ -94,34 +81,30 @@ button {
 }
 
 button:hover {
-    background: #7f5539;
+    background: #52e0c4;
 }
 
 
 #result {
     margin-top: 15px;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
+    color: #64ffda;
 }
 
 
 footer {
-    background: #cdb4a4;
+    background: #020c1b;
     text-align: center;
     padding: 15px;
-    margin-top: 20px;
+    margin-top: 40px;
+    color: #8892b0;
 }
 
-@media (max-width: 600px) {
-    header h1 {
-        font-size: 22px;
-    }
 
-    nav {
-        gap: 10px;
-    }
-
+@media (min-width: 768px) {
     section {
-        padding: 15px;
+        max-width: 900px;
+        margin: 20px auto;
     }
 }
