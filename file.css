@@ -1,15 +1,15 @@
 /* BODY */
 body {
-    background: linear-gradient(135deg, #e3f2fd, #ffffff);
+    background: linear-gradient(135deg, #fdf6ec, #f5e6d3);
     font-family: 'Segoe UI', sans-serif;
-    color: #212529;
+    color: #3e2f2f;
 }
 
 /* HEADER */
 header {
-    background: linear-gradient(135deg, #0d6efd, #3a8bfd);
-    color: white;
-    border-bottom: 4px solid #084298;
+    background: linear-gradient(135deg, #c8a97e, #e6ccb2);
+    color: #2c1f1f;
+    border-bottom: 4px solid #a47148;
 }
 
 header h1 {
@@ -22,6 +22,7 @@ header p {
 
 /* NAVBAR */
 .navbar {
+    background: #a47148 !important;
     box-shadow: 0 3px 10px rgba(0,0,0,0.2);
 }
 
@@ -29,7 +30,7 @@ header p {
 .card {
     border-radius: 15px;
     border: none;
-    background: #ffffff;
+    background: #f5e6d3; /* beige */
     transition: 0.3s ease;
 }
 
@@ -37,15 +38,15 @@ header p {
     transform: translateY(-5px);
 }
 
-/* CARD TEXT VISIBILITY */
+/* TEXT */
 .card h2, 
 .card h5 {
-    color: #0d6efd;
+    color: #6b4226;
     font-weight: bold;
 }
 
 .card p {
-    color: #333;
+    color: #3e2f2f;
     font-weight: 500;
 }
 
@@ -54,11 +55,13 @@ header p {
     box-shadow: 0 10px 25px rgba(0,0,0,0.15) !important;
 }
 
-/* INPUT & SELECT */
+/* INPUT */
 input, select {
     border-radius: 10px !important;
     padding: 10px !important;
-    border: 1px solid #ccc !important;
+    border: 1px solid #c8a97e !important;
+    background: #fffaf3;
+    color: #3e2f2f;
     font-weight: 500;
 }
 
@@ -66,10 +69,14 @@ input, select {
 button {
     border-radius: 10px !important;
     font-weight: bold;
+    background: #a47148 !important;
+    border: none !important;
+    color: white !important;
     transition: 0.3s;
 }
 
 button:hover {
+    background: #8b5e3c !important;
     transform: scale(1.03);
 }
 
@@ -77,53 +84,52 @@ button:hover {
 #result {
     font-size: 28px;
     font-weight: bold;
-    color: #0d6efd;
+    color: #6b4226;
 }
 
-/* ALERT BOXES */
+/* ALERT BOX */
 .alert {
     border-radius: 10px;
     font-weight: 600;
 }
 
-/* LIST GROUP */
+/* LIST */
 .list-group-item {
     font-weight: 500;
     border: none;
+    background: transparent;
 }
 
-/* ===== EXCHANGE RATES FIX (IMPORTANT) ===== */
+/* ===== EXCHANGE RATE FIX ===== */
 #rates .card {
-    background: #ffffff;
-    border-left: 6px solid #0d6efd;
+    background: #f5e6d3;
+    border-left: 6px solid #a47148;
 }
 
 #rates h2 {
-    color: #0d6efd;
-    font-weight: bold;
+    color: #6b4226;
 }
 
 #rates p {
-    color: #000;            /* 🔥 strong visible text */
+    color: #2c1f1f;
     font-size: 16px;
     font-weight: 600;
 }
 
-/* ICON COLOR */
+/* ICON */
 #rates i {
-    color: #0d6efd;
-    margin-right: 5px;
+    color: #a47148;
 }
 
-/* HELP SECTION */
+/* HELP */
 #help .card {
-    background: linear-gradient(135deg, #e0f7fa, #ffffff);
+    background: #efe0cc;
 }
 
 /* FOOTER */
 footer {
-    background: #212529;
-    color: white;
+    background: #6b4226;
+    color: #fffaf3;
     font-size: 14px;
 }
 
