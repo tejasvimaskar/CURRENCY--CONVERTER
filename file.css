@@ -1,14 +1,15 @@
-/* BODY BACKGROUND */
+/* BODY */
 body {
-    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    background: linear-gradient(135deg, #e3f2fd, #ffffff);
     font-family: 'Segoe UI', sans-serif;
+    color: #212529;
 }
 
 /* HEADER */
 header {
-    background: linear-gradient(135deg, #0d6efd, #4facfe);
+    background: linear-gradient(135deg, #0d6efd, #3a8bfd);
     color: white;
-    border-bottom: 4px solid #002855;
+    border-bottom: 4px solid #084298;
 }
 
 header h1 {
@@ -21,37 +22,39 @@ header p {
 
 /* NAVBAR */
 .navbar {
-    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
 }
 
-/* CARDS */
+/* CARD */
 .card {
     border-radius: 15px;
     border: none;
     background: #ffffff;
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
-.card h2, .card h5 {
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* CARD TEXT VISIBILITY */
+.card h2, 
+.card h5 {
     color: #0d6efd;
     font-weight: bold;
 }
 
 .card p {
     color: #333;
-}
-
-/* HOVER EFFECT */
-.card:hover {
-    transform: translateY(-6px);
+    font-weight: 500;
 }
 
 /* SHADOW */
 .shadow {
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2) !important;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15) !important;
 }
 
-/* INPUT + SELECT */
+/* INPUT & SELECT */
 input, select {
     border-radius: 10px !important;
     padding: 10px !important;
@@ -70,14 +73,14 @@ button:hover {
     transform: scale(1.03);
 }
 
-/* RESULT TEXT */
+/* RESULT */
 #result {
     font-size: 28px;
     font-weight: bold;
     color: #0d6efd;
 }
 
-/* ALERT BOX */
+/* ALERT BOXES */
 .alert {
     border-radius: 10px;
     font-weight: 600;
@@ -87,6 +90,29 @@ button:hover {
 .list-group-item {
     font-weight: 500;
     border: none;
+}
+
+/* ===== EXCHANGE RATES FIX (IMPORTANT) ===== */
+#rates .card {
+    background: #ffffff;
+    border-left: 6px solid #0d6efd;
+}
+
+#rates h2 {
+    color: #0d6efd;
+    font-weight: bold;
+}
+
+#rates p {
+    color: #000;            /* 🔥 strong visible text */
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* ICON COLOR */
+#rates i {
+    color: #0d6efd;
+    margin-right: 5px;
 }
 
 /* HELP SECTION */
@@ -101,7 +127,7 @@ footer {
     font-size: 14px;
 }
 
-/* MOBILE RESPONSIVE */
+/* RESPONSIVE */
 @media (max-width: 768px) {
     header h1 {
         font-size: 22px;
