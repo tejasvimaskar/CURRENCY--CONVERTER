@@ -1,11 +1,11 @@
-/* BODY (NUDE BACKGROUND) */
+
 body {
     background: linear-gradient(135deg, #fdf6ec, #f5e6d3);
     font-family: 'Segoe UI', sans-serif;
     color: #2c2c2c;
 }
 
-/* HEADER (DARK BLUE - AS YOU WANT) */
+
 header {
     background: linear-gradient(135deg, #0a192f, #112240);
     color: white;
@@ -20,13 +20,13 @@ header p {
     opacity: 0.85;
 }
 
-/* NAVBAR */
+
 .navbar {
     background: #020c1b !important;
     box-shadow: 0 3px 10px rgba(0,0,0,0.3);
 }
 
-/* CARD (NUDE LOOK) */
+
 .card {
     border-radius: 15px;
     border: none;
@@ -38,7 +38,7 @@ header p {
     transform: translateY(-5px);
 }
 
-/* TEXT */
+
 .card h2, 
 .card h5 {
     color: #3e2f2f;
@@ -50,12 +50,12 @@ header p {
     font-weight: 500;
 }
 
-/* SHADOW */
+
 .shadow {
     box-shadow: 0 10px 25px rgba(0,0,0,0.15) !important;
 }
 
-/* INPUT */
+
 input, select {
     border-radius: 10px !important;
     padding: 10px !important;
@@ -64,7 +64,7 @@ input, select {
     color: #3e2f2f;
 }
 
-/* BUTTON */
+
 button {
     border-radius: 10px !important;
     font-weight: bold;
@@ -78,27 +78,26 @@ button:hover {
     transform: scale(1.03);
 }
 
-/* RESULT */
+
 #result {
     font-size: 28px;
     font-weight: bold;
     color: #0a192f;
 }
 
-/* ALERT BOX */
+
 .alert {
     border-radius: 10px;
     font-weight: 600;
 }
 
-/* LIST */
+
 .list-group-item {
     font-weight: 500;
     border: none;
     background: transparent;
 }
 
-/* ===== EXCHANGE RATES (FIXED VISIBILITY) ===== */
 #rates .card {
     background: #f5e6d3;
     border-left: 6px solid #0a192f;
@@ -114,24 +113,24 @@ button:hover {
     font-weight: 600;
 }
 
-/* ICON */
+
 #rates i {
     color: #0a192f;
 }
 
-/* HELP */
+
 #help .card {
     background: #efe0cc;
 }
 
-/* FOOTER */
+
 footer {
     background: #0a192f;
     color: white;
     font-size: 14px;
 }
 
-/* RESPONSIVE */
+
 @media (max-width: 768px) {
     header h1 {
         font-size: 22px;
