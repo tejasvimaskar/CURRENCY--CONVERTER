@@ -1,14 +1,14 @@
-/* BODY */
+/* BODY BACKGROUND */
 body {
-    background: linear-gradient(135deg, #eef2f3, #dfe9f3);
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
     font-family: 'Segoe UI', sans-serif;
 }
 
 /* HEADER */
 header {
-    background: linear-gradient(135deg, #0d6efd, #3a8bfd);
+    background: linear-gradient(135deg, #0d6efd, #4facfe);
     color: white;
-    border-bottom: 4px solid #084298;
+    border-bottom: 4px solid #002855;
 }
 
 header h1 {
@@ -21,29 +21,42 @@ header p {
 
 /* NAVBAR */
 .navbar {
-    letter-spacing: 0.5px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
 }
 
-/* CARD */
+/* CARDS */
 .card {
-    border: none;
     border-radius: 15px;
+    border: none;
+    background: #ffffff;
     transition: 0.3s;
 }
 
+.card h2, .card h5 {
+    color: #0d6efd;
+    font-weight: bold;
+}
+
+.card p {
+    color: #333;
+}
+
+/* HOVER EFFECT */
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-6px);
 }
 
-/* SHADOW IMPROVEMENT */
+/* SHADOW */
 .shadow {
-    box-shadow: 0 8px 25px rgba(0,0,0,0.1) !important;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2) !important;
 }
 
-/* INPUT */
+/* INPUT + SELECT */
 input, select {
     border-radius: 10px !important;
     padding: 10px !important;
+    border: 1px solid #ccc !important;
+    font-weight: 500;
 }
 
 /* BUTTON */
@@ -54,46 +67,47 @@ button {
 }
 
 button:hover {
-    transform: scale(1.02);
+    transform: scale(1.03);
 }
 
-/* RESULT */
+/* RESULT TEXT */
 #result {
-    font-size: 26px;
+    font-size: 28px;
     font-weight: bold;
     color: #0d6efd;
 }
 
-/* ALERT BOXES */
+/* ALERT BOX */
 .alert {
     border-radius: 10px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 /* LIST GROUP */
 .list-group-item {
-    border: none;
-    padding: 12px;
     font-weight: 500;
+    border: none;
 }
 
 /* HELP SECTION */
 #help .card {
-    background: #f1f5ff;
+    background: linear-gradient(135deg, #e0f7fa, #ffffff);
 }
 
 /* FOOTER */
 footer {
+    background: #212529;
+    color: white;
     font-size: 14px;
 }
 
-/* RESPONSIVE */
+/* MOBILE RESPONSIVE */
 @media (max-width: 768px) {
     header h1 {
         font-size: 22px;
     }
 
     #result {
-        font-size: 22px;
+        font-size: 24px;
     }
 }
