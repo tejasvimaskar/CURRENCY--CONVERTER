@@ -1,15 +1,15 @@
-/* BODY */
+/* BODY (NUDE BACKGROUND) */
 body {
     background: linear-gradient(135deg, #fdf6ec, #f5e6d3);
     font-family: 'Segoe UI', sans-serif;
-    color: #3e2f2f;
+    color: #2c2c2c;
 }
 
-/* HEADER */
+/* HEADER (DARK BLUE - AS YOU WANT) */
 header {
-    background: linear-gradient(135deg, #c8a97e, #e6ccb2);
-    color: #2c1f1f;
-    border-bottom: 4px solid #a47148;
+    background: linear-gradient(135deg, #0a192f, #112240);
+    color: white;
+    border-bottom: 4px solid #64ffda;
 }
 
 header h1 {
@@ -17,20 +17,20 @@ header h1 {
 }
 
 header p {
-    opacity: 0.9;
+    opacity: 0.85;
 }
 
 /* NAVBAR */
 .navbar {
-    background: #a47148 !important;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    background: #020c1b !important;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
 }
 
-/* CARD */
+/* CARD (NUDE LOOK) */
 .card {
     border-radius: 15px;
     border: none;
-    background: #f5e6d3; /* beige */
+    background: #f5e6d3;
     transition: 0.3s ease;
 }
 
@@ -41,12 +41,12 @@ header p {
 /* TEXT */
 .card h2, 
 .card h5 {
-    color: #6b4226;
+    color: #3e2f2f;
     font-weight: bold;
 }
 
 .card p {
-    color: #3e2f2f;
+    color: #4b3832;
     font-weight: 500;
 }
 
@@ -62,21 +62,19 @@ input, select {
     border: 1px solid #c8a97e !important;
     background: #fffaf3;
     color: #3e2f2f;
-    font-weight: 500;
 }
 
 /* BUTTON */
 button {
     border-radius: 10px !important;
     font-weight: bold;
-    background: #a47148 !important;
-    border: none !important;
+    background: #0a192f !important;
     color: white !important;
-    transition: 0.3s;
+    border: none !important;
 }
 
 button:hover {
-    background: #8b5e3c !important;
+    background: #112240 !important;
     transform: scale(1.03);
 }
 
@@ -84,7 +82,7 @@ button:hover {
 #result {
     font-size: 28px;
     font-weight: bold;
-    color: #6b4226;
+    color: #0a192f;
 }
 
 /* ALERT BOX */
@@ -100,25 +98,25 @@ button:hover {
     background: transparent;
 }
 
-/* ===== EXCHANGE RATE FIX ===== */
+/* ===== EXCHANGE RATES (FIXED VISIBILITY) ===== */
 #rates .card {
     background: #f5e6d3;
-    border-left: 6px solid #a47148;
+    border-left: 6px solid #0a192f;
 }
 
 #rates h2 {
-    color: #6b4226;
+    color: #0a192f;
 }
 
 #rates p {
-    color: #2c1f1f;
+    color: #2c2c2c;
     font-size: 16px;
     font-weight: 600;
 }
 
 /* ICON */
 #rates i {
-    color: #a47148;
+    color: #0a192f;
 }
 
 /* HELP */
@@ -128,8 +126,8 @@ button:hover {
 
 /* FOOTER */
 footer {
-    background: #6b4226;
-    color: #fffaf3;
+    background: #0a192f;
+    color: white;
     font-size: 14px;
 }
 
