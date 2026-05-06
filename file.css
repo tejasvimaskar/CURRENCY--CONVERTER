@@ -2,85 +2,88 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: Arial;
 }
 
-/* 💥 NUDE BACKGROUND FIX */
+/* 🌸 NUDE SKIN BACKGROUND */
 body {
-    background: linear-gradient(135deg, #f6e7d8, #f2dfcc);
+    background: linear-gradient(135deg, #f7e2d0, #f5d7c3);
     color: #333;
 }
 
 /* HEADER */
 header {
-    background: linear-gradient(to right, #0b2545, #1b3a5b);
+    background: #1b3a5b;
     color: white;
     text-align: center;
-    padding: 25px 10px;
+    padding: 20px;
 }
 
 /* NAV */
 nav {
-    background: #1b3a5b;
+    background: #2c4a6b;
     text-align: center;
-    padding: 12px;
+    padding: 10px;
 }
 
 nav a {
     color: white;
-    margin: 0 15px;
+    margin: 0 10px;
     text-decoration: none;
 }
 
 /* MAIN */
 main {
-    width: 95%;
-    max-width: 1100px;
+    max-width: 900px;
     margin: 30px auto;
 }
 
-/* SECTION CARDS (GLASS EFFECT) */
+/* SECTION */
 .section {
-    background: rgba(255,255,255,0.35);
-    backdrop-filter: blur(10px);
+    background: rgba(255,255,255,0.4);
+    backdrop-filter: blur(8px);
     padding: 25px;
-    margin-bottom: 25px;
-    border-radius: 15px;
-    border: 1px solid rgba(255,255,255,0.4);
+    margin-bottom: 20px;
+    border-radius: 12px;
+}
+
+/* BOX */
+.box {
+    max-width: 400px;
+    margin: auto;
 }
 
 /* INPUT */
 input, select {
     width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-    border-radius: 8px;
+    padding: 10px;
+    margin: 8px 0;
     border: none;
+    border-radius: 6px;
 }
 
 /* BUTTON */
 button {
     width: 100%;
-    padding: 12px;
+    padding: 10px;
     background: #1b3a5b;
     color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 6px;
 }
 
 /* RESULT */
 #result {
-    text-align: center;
-    font-size: 20px;
     margin-top: 10px;
     font-weight: bold;
+    text-align: center;
 }
 
 /* FOOTER */
 footer {
-    background: #1f2937;
+    background: #1b3a5b;
     color: white;
     text-align: center;
-    padding: 20px;
-    margin-top: 40px;
+    padding: 15px;
+    margin-top: 30px;
 }
