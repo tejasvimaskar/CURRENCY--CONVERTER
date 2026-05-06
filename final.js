@@ -1,4 +1,4 @@
-// CONVERT FUNCTION (API CALL)
+
 async function convert() {
 
 let amount = document.getElementById("amount").value;
@@ -17,8 +17,6 @@ resultBox.className = "alert alert-warning text-center mt-2";
 resultBox.innerText = "Converting...";
 
 try {
-
-// 🌐 API CALL
 let response = await fetch(`https://api.exchangerate-api.com/v4/latest/${from}`);
 let data = await response.json();
 
@@ -31,7 +29,6 @@ resultBox.innerText = "Converted Amount: " + result.toFixed(2) + " " + to;
 document.getElementById("rateInfo").innerText =
 "1 " + from + " = " + rate + " " + to;
 
-// SAVE HISTORY
 saveHistory(amount, from, to, result);
 
 } catch (error) {
@@ -40,8 +37,7 @@ resultBox.innerText = "Error fetching data!";
 }
 }
 
-
-// 🕘 SAVE HISTORY
+// HISTORY
 function saveHistory(amount, from, to, result) {
 
 let history = JSON.parse(localStorage.getItem("history")) || [];
@@ -58,8 +54,6 @@ localStorage.setItem("history", JSON.stringify(history));
 displayHistory();
 }
 
-
-// 📜 DISPLAY HISTORY
 function displayHistory() {
 
 let history = JSON.parse(localStorage.getItem("history")) || [];
@@ -74,13 +68,9 @@ div.appendChild(p);
 });
 }
 
-
-// 🧹 CLEAR HISTORY
 function clearHistory() {
 localStorage.removeItem("history");
 displayHistory();
 }
 
-
-// AUTO LOAD HISTORY
 document.addEventListener("DOMContentLoaded", displayHistory);
