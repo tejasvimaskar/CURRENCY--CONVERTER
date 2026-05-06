@@ -1,4 +1,3 @@
-/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -6,9 +5,9 @@
     font-family: Arial, sans-serif;
 }
 
-/* BODY */
+/* 💥 NUDE BACKGROUND FIX */
 body {
-    background: #f5ebe0;
+    background: linear-gradient(135deg, #f6e7d8, #f2dfcc);
     color: #333;
 }
 
@@ -20,11 +19,7 @@ header {
     padding: 25px 10px;
 }
 
-header h1 {
-    font-size: 28px;
-}
-
-/* NAVBAR */
+/* NAV */
 nav {
     background: #1b3a5b;
     text-align: center;
@@ -35,56 +30,26 @@ nav a {
     color: white;
     margin: 0 15px;
     text-decoration: none;
-    font-weight: bold;
 }
 
-nav a:hover {
-    color: #ffd6a5;
-}
-
-/* MAIN CONTAINER */
+/* MAIN */
 main {
     width: 95%;
-    max-width: 1100px;   /* 🔥 BIG WIDTH (important) */
+    max-width: 1100px;
     margin: 30px auto;
 }
 
-/* SECTIONS (CARDS) */
+/* SECTION CARDS (GLASS EFFECT) */
 .section {
-    background: #e6d5c3;
+    background: rgba(255,255,255,0.35);
+    backdrop-filter: blur(10px);
     padding: 25px;
     margin-bottom: 25px;
     border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255,255,255,0.4);
 }
 
-/* DASHBOARD SMALL BOXES */
-.features {
-    display: flex;
-    justify-content: space-between;
-    gap: 15px;
-    margin-top: 15px;
-}
-
-.feature-box {
-    flex: 1;
-    padding: 15px;
-    border-radius: 10px;
-    text-align: center;
-    font-weight: bold;
-}
-
-.feature1 { background: #cdeac0; }
-.feature2 { background: #ffe5b4; }
-.feature3 { background: #bde0fe; }
-
-/* CONVERTER BOX CENTER */
-.converter-box {
-    max-width: 500px;
-    margin: auto;
-}
-
-/* INPUTS */
+/* INPUT */
 input, select {
     width: 100%;
     padding: 12px;
@@ -101,17 +66,12 @@ button {
     color: white;
     border: none;
     border-radius: 8px;
-    cursor: pointer;
-}
-
-button:hover {
-    background: #0b2545;
 }
 
 /* RESULT */
 #result {
     text-align: center;
-    font-size: 22px;
+    font-size: 20px;
     margin-top: 10px;
     font-weight: bold;
 }
@@ -121,22 +81,6 @@ footer {
     background: #1f2937;
     color: white;
     text-align: center;
-    padding: 25px;
+    padding: 20px;
     margin-top: 40px;
-}
-
-footer a {
-    color: #ffd6a5;
-    text-decoration: none;
-}
-
-/* RESPONSIVE (MOBILE FIX) */
-@media (max-width: 768px) {
-    .features {
-        flex-direction: column;
-    }
-
-    main {
-        width: 90%;
-    }
 }
