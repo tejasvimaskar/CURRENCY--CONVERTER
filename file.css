@@ -1,89 +1,235 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial;
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior:smooth;
 }
 
-/* 🌸 NUDE SKIN BACKGROUND */
-body {
-    background: linear-gradient(135deg, #f7e2d0, #f5d7c3);
-    color: #333;
+/* BODY */
+body{
+    background:#f5ebe0;   /* Nude / Beige Background */
+    color:#333;
+    line-height:1.6;
 }
 
 /* HEADER */
-header {
-    background: #1b3a5b;
-    color: white;
-    text-align: center;
-    padding: 20px;
+header{
+    background:linear-gradient(to right,#0b2545,#13315c);
+    color:white;
+    text-align:center;
+    padding:25px 10px;
 }
 
-/* NAV */
-nav {
-    background: #2c4a6b;
-    text-align: center;
-    padding: 10px;
+header h1{
+    font-size:38px;
+    margin-bottom:5px;
 }
 
-nav a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
+header p{
+    font-size:16px;
 }
 
-/* MAIN */
-main {
-    max-width: 900px;
-    margin: 30px auto;
+/* NAVBAR */
+nav{
+    background:#8c8c8c;
+    text-align:center;
+    padding:12px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#ffe0b2;
 }
 
 /* SECTION */
-.section {
-    background: rgba(255,255,255,0.4);
-    backdrop-filter: blur(8px);
-    padding: 25px;
-    margin-bottom: 20px;
-    border-radius: 12px;
+section{
+    padding:40px 20px;
+    text-align:center;
 }
 
-/* BOX */
-.box {
-    max-width: 400px;
-    margin: auto;
+/* DASHBOARD BOXES */
+.dashboard-box{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:25px;
 }
 
-/* INPUT */
-input, select {
-    width: 100%;
-    padding: 10px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 6px;
+.box{
+    background:white;
+    padding:25px;
+    width:220px;
+    border-radius:8px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.box:hover{
+    transform:translateY(-5px);
+}
+
+/* CONVERTER CARD */
+.converter-card{
+    background:white;
+    max-width:700px;
+    margin:30px auto;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.converter-card h2{
+    margin-bottom:20px;
+}
+
+/* INPUTS */
+input, select{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+    font-size:16px;
+}
+
+/* SELECT ROW */
+.select-row{
+    display:flex;
+    gap:15px;
+}
+
+.select-row select{
+    flex:1;
 }
 
 /* BUTTON */
-button {
-    width: 100%;
-    padding: 10px;
-    background: #1b3a5b;
-    color: white;
-    border: none;
-    border-radius: 6px;
+button{
+    width:100%;
+    padding:12px;
+    border:none;
+    background:#1f2937;
+    color:white;
+    font-size:17px;
+    border-radius:5px;
+    cursor:pointer;
+    transition:0.3s;
+    margin-top:10px;
 }
 
-/* RESULT */
-#result {
-    margin-top: 10px;
-    font-weight: bold;
-    text-align: center;
+button:hover{
+    background:#111827;
+}
+
+/* RESULT BOX */
+.result{
+    margin-top:25px;
+    background:#d9f2f7;
+    padding:18px;
+    border-radius:5px;
+    font-size:20px;
+    font-weight:bold;
+}
+
+/* HISTORY */
+.history{
+    max-width:700px;
+    margin:30px auto;
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.history button{
+    background:#dc3545;
+}
+
+.history button:hover{
+    background:#b02a37;
+}
+
+/* EXCHANGE RATE */
+.rates{
+    margin-top:20px;
+}
+
+/* WHY CHOOSE US */
+.features{
+    margin-top:20px;
+}
+
+.features p{
+    margin:10px 0;
+    font-size:18px;
+}
+
+/* HELP & CONTACT */
+.contact p,
+.help p{
+    margin:8px 0;
+    font-size:18px;
 }
 
 /* FOOTER */
-footer {
-    background: #1b3a5b;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    margin-top: 30px;
+footer{
+    background:#1f2937;
+    color:white;
+    text-align:center;
+    padding:35px 20px;
+    margin-top:40px;
+}
+
+footer h3{
+    margin-bottom:10px;
+}
+
+footer a{
+    color:#ffe0b2;
+    text-decoration:none;
+}
+
+footer a:hover{
+    text-decoration:underline;
+}
+
+/* MOBILE RESPONSIVE */
+@media(max-width:768px){
+
+    header h1{
+        font-size:28px;
+    }
+
+    .dashboard-box{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .box{
+        width:90%;
+    }
+
+    .select-row{
+        flex-direction:column;
+    }
+
+    nav a{
+        display:inline-block;
+        margin:5px;
+        font-size:14px;
+    }
+
+    .converter-card,
+    .history{
+        width:95%;
+    }
 }
